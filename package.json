@@ -1,0 +1,16 @@
+{
+	"name": "question_assignment",
+	"version": "1.0.0",
+	"description": "An Express app serving static files and connecting to a MySQL database",
+	"main": "app.js",
+	"scripts": {
+	  "start": "node app.js"
+	},
+	"dependencies": {
+	  "express": "^4.18.2",
+	  "mysql": "^2.18.1"
+	},
+	"author": "Vivek Sharma",
+	"license": "ISC"
+  }
+  

@@ -1,0 +1,93 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif; /* Change the font to Roboto */
+  background-color: #f5f7fb; /* Slightly lighter blue background */
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+#highScores {
+  background: #ffffff; /* Pure white background */
+  padding: 40px; /* Increase the padding for more breathing room */
+  border-radius: 16px; /* Slightly larger border radius */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08); /* Softer, larger shadow */
+  transition: all 0.3s ease;
+}
+
+#highScores:hover {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12); /* Increased shadow on hover */
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.2rem; /* Slightly larger title */
+  color: #2c3e50; /* Slightly darker grey for better contrast */
+  margin-bottom: 1.5rem;
+}
+
+table {
+  border-radius: 12px; /* Larger border radius for the table */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); /* Softer, larger shadow for the table */
+}
+
+th, td {
+  font-size: 1.6rem; /* Slightly smaller font size for better readability */
+  color: #4a4a4a; /* Slightly darker grey for better contrast */
+}
+
+.btn {
+  font-size: 1.4rem; /* Slightly smaller button font size */
+  padding: 12px 20px; /* Slightly smaller button padding */
+}
+
+#highScoresList {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: left;
+  padding-left: 0;
+  margin-bottom: 2rem;
+  counter-reset: score-counter;
+}
+
+.high-score {
+  font-size: 1.6rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0.5rem 1rem;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.high-score::before {
+  counter-increment: score-counter; /* Increment counter */
+  content: counter(score-counter) ". "; /* Add counter value and period */
+  color: #007bff; /* Set counter color */
+  margin-right: 0.5rem; /* Add spacing between counter and name */
+}
+
+.high-score::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #007bff;
+  left: 0;
+  bottom: -4px;
+  transition: width 0.3s ease;
+}
+
+.high-score:hover {
+  color: #007bff;
+}
+
+.high-score:hover::after {
+  width: 100%;
+}
