@@ -127,11 +127,3 @@ If you want to modify the Anime Quiz application, you can follow these steps:
 2. Modify the HTML, CSS, JavaScript, and SQL files as needed.
 3. Test your changes locally by running the application and interacting with the quiz.
 4. Once you're satisfied with your changes, commit and push the updates to your GitHub repository.
-
-## License
-
-This project is licensed under the ISC License.
-```
-
-This format is structured and GitHub-friendly, with clear headings and code blocks for easy readability and setup instructions.
-```
